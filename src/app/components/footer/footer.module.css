@@ -1,0 +1,107 @@
+/* Estilos para el pie de página */
+.footer {
+    background: var(--color-rosa);
+    color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Estilos para el contenedor principal en el pie de página */
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem; 
+    height: 100%;
+    gap: 1.25rem;     
+    padding: 20px;
+}
+
+/* Estilos para grupos de elementos en el pie de página */
+.footer__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.625rem; 
+    text-align: center;
+}
+
+/* Estilos para encabezados de grupos */
+.footer__group h4 {
+    font-size: 18px;
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+/* Estilos para enlaces en grupos */
+.footer__group a {
+    color: var(--color-background);
+}
+
+/* Estilos para la sección de invitación en el pie de página */
+.footer__invitation {
+    height: 100%;
+    margin: 1.25rem 0;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+/* Estilos para el título en la sección de invitación */
+.footer__title h3 {
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+/* Estilos para los botones de invitación */
+.invitation__button {
+    width: 100%;
+}
+
+.invitation__button a {
+    border-radius: 0.3125rem; 
+}
+
+.invitation__button ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fundamentals {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    color: var(--color-rosa-claro);
+    background: var(--color-rosa-morado);
+}
+
+/* Media queries */
+@media (min-width: 425px) {
+    .footer__container {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        justify-content: center;
+    }
+    .footer__container {
+        flex-direction: row;
+        font-size: 1rem;
+        order: 0;
+        gap: 8.5rem;
+    }
+    .footer__group {
+        gap: 0.9375rem; 
+        text-align: start;
+    }
+    .footer__invitation {
+        margin: 0; 
+    }
+}

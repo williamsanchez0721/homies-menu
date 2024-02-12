@@ -1,0 +1,51 @@
+/* contact.module.css */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact__title {
+    font-size: var(--large-title);
+    font-weight: 600;
+    color: var(--color-rosa-morado);
+    margin-bottom: 20px;
+}
+
+.contact__description {
+    font-size: 22px;
+    color: var(--color-rosa-morado);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.location {
+    flex: 1;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--color-rosa-morado);
+    border-radius: 10px;
+}
+
+.location__title {
+    font-size: var(--medium-title);
+    font-weight: 600;
+    color: var(--color-morado);
+    margin-bottom: 16px;
+}
+
+.contact__info {
+    font-weight: 600;
+    color: var(--color-morado);
+}

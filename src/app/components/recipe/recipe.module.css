@@ -1,0 +1,78 @@
+.card__recipe {
+  max-width: 324px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container__recipe {
+  max-height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__recipe img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  max-height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.recipe__content {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.recipe__title {
+  padding-top: 10px;
+  font-size: 18px;
+  color: #333; /* Cambiado a un tono más oscuro de gris para mayor legibilidad */
+  font-weight: 700;
+  margin: 0;
+}
+
+.recipe__category {
+  font-size: 14px;
+  color: #666; /* Cambiado a un tono de gris más claro */
+}
+
+.recipe__price {
+  text-align: center;
+  color: var(--color-rosa-morado); /* Cambiado a un tono más suave de rosa-morado */
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.recipe {
+  padding: 5px 0;
+  color: #666; /* Cambiado a un tono de gris más claro */
+  max-width: 700px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px 10px;
+}
+
+.add__button {
+  padding: 7px;
+  border-radius: 10px;
+  color: var(--color-background); /* Cambiado a un tono más suave de rosa-morado */
+  cursor: pointer;
+}
