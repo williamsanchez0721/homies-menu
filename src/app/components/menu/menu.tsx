@@ -1,7 +1,7 @@
 // Menu.tsx
 import React from 'react';
 import styles from './menu.module.css';
-import { Category, RecipeData, burgers, nuggets, niños, acompañamientos, bebidas, malteadas, adicionales } from './Recipe';
+import { Category, RecipeData, burgers, niños, acompañamientos, bebidas, malteadas, adicionales } from './Recipe';
 import Recipe from '../recipe/Recipe';
 
 interface MenuProps {
@@ -12,7 +12,6 @@ const Menu: React.FC<MenuProps> = ({ title }) => {
   // Map de las categorías disponibles
   const categories: Record<string, Category> = {
     burgers,
-    nuggets,
     niños,
     acompañamientos,
     bebidas,
@@ -38,6 +37,7 @@ const Menu: React.FC<MenuProps> = ({ title }) => {
                   key={`${key}_${singleRecipe.name}`}
                   name={singleRecipe.name}
                   image={singleRecipe.image}
+                  category={singleRecipe.category}
                   recipe={singleRecipe.recipe}
                   price={singleRecipe.price}
               />

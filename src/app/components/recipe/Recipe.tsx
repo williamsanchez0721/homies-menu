@@ -5,11 +5,12 @@ import React from 'react';
 interface RecipeProps {
     name: string;
     image: string;
+    category: string,
     recipe: string;
     price: number;
 }
 
-const Recipe: React.FC<RecipeProps> = ({ name, image, recipe, price }) => {
+const Recipe: React.FC<RecipeProps> = ({ name, image, category, recipe, price }) => {
 
     const formattedPrice = new Intl.NumberFormat('es-CO', {
         style: 'currency',
@@ -25,7 +26,7 @@ const Recipe: React.FC<RecipeProps> = ({ name, image, recipe, price }) => {
             </div>
             <div className={styles.recipe__content}>
                 <h3 className={`${styles.recipe__title} montserrat-600`}>{name}</h3>
-                <p className={`${styles.recipe__category} montserrat-100`}>Categoría</p>
+                <p className={`${styles.recipe__category} montserrat-100`}>{category}</p>
                 <p className={`${styles.recipe} montserrat-600`}>{recipe}</p>
             </div>
             <div className={styles.content__bottom}>

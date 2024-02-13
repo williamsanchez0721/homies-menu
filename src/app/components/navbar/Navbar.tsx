@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     <Link href="/">
                         <Image 
                             alt="Logo de Cococu"
-                            src="/logo_rosado.png"
+                            src="/logo_dorado.png"
                             width={60}
                             height={40}
                             quality={100}
@@ -42,9 +42,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 <Link href="/bebidas">Bebidas</Link>
                             </li>
                             <li className='nav__link sub__link'>
-                                <Link href="/malteadas">Malteadas</Link>
-                            </li>
-                            <li className='nav__link sub__link'>
                                 <Link href="/adicionales">Adicionales</Link>
                             </li>
                         </ul>
@@ -57,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     <Link href="/">Reservar</Link>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36" fill="none" className='menu__icon' onClick={handleClickMenu}>
-                    <path d="M1.0625 7.71429H28.6875C29.2745 7.71429 29.75 7.13893 29.75 6.42857V1.28571C29.75 0.575357 29.2745 0 28.6875 0H1.0625C0.475469 0 0 0.575357 0 1.28571V6.42857C0 7.13893 0.475469 7.71429 1.0625 7.71429ZM32.9375 14.1429H5.3125C4.72547 14.1429 4.25 14.7182 4.25 15.4286V20.5714C4.25 21.2818 4.72547 21.8571 5.3125 21.8571H32.9375C33.5245 21.8571 34 21.2818 34 20.5714V15.4286C34 14.7182 33.5245 14.1429 32.9375 14.1429ZM28.6875 28.2857H1.0625C0.475469 28.2857 0 28.8611 0 29.5714V34.7143C0 35.4246 0.475469 36 1.0625 36H28.6875C29.2745 36 29.75 35.4246 29.75 34.7143V29.5714C29.75 28.8611 29.2745 28.2857 28.6875 28.2857Z" fill="#FFE3FB"/>
+                    <path d="M1.0625 7.71429H28.6875C29.2745 7.71429 29.75 7.13893 29.75 6.42857V1.28571C29.75 0.575357 29.2745 0 28.6875 0H1.0625C0.475469 0 0 0.575357 0 1.28571V6.42857C0 7.13893 0.475469 7.71429 1.0625 7.71429ZM32.9375 14.1429H5.3125C4.72547 14.1429 4.25 14.7182 4.25 15.4286V20.5714C4.25 21.2818 4.72547 21.8571 5.3125 21.8571H32.9375C33.5245 21.8571 34 21.2818 34 20.5714V15.4286C34 14.7182 33.5245 14.1429 32.9375 14.1429ZM28.6875 28.2857H1.0625C0.475469 28.2857 0 28.8611 0 29.5714V34.7143C0 35.4246 0.475469 36 1.0625 36H28.6875C29.2745 36 29.75 35.4246 29.75 34.7143V29.5714C29.75 28.8611 29.2745 28.2857 28.6875 28.2857Z" fill="var(--color-rosa)"/>
                 </svg>
             </div>
 
@@ -69,16 +66,16 @@ const Navbar: React.FC<NavbarProps> = () => {
                         </li>
                         <li className='nav__link'>
                             <Link href="#" className='dropdown__link'>Menú
-                                <span className="material-symbols-outlined">
-                                    expand_more
-                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 448 512">
+                                    <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" fill="var(--color-rosa-claro)"/>
+                                </svg>
                             </Link>
                             <input type="checkbox" className='dropdown__check'/>
 
                             <div className='dropdown__content'>
 
                                 <ul className='dropdown__sub'>
-                                    <li className='dropdown__li'>
+                                    <li className='nav__link sub__link'>
                                         <Link href="/burgers" className='dropdown__anchor'>Burgers</Link>
                                     </li>
                                     <li className='nav__link sub__link'>
@@ -86,9 +83,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                                     </li>
                                     <li className='nav__link sub__link'>
                                         <Link href="/bebidas" className='dropdown__anchor'>Bebidas</Link>
-                                    </li>
-                                    <li className='nav__link sub__link'>
-                                        <Link href="/malteadas" className='dropdown__anchor'>Malteadas</Link>
                                     </li>
                                     <li className='nav__link sub__link'>
                                         <Link href="/adicionales" className='dropdown__anchor'>Adicionales</Link>

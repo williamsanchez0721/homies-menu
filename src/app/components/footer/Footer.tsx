@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footer__container}>
                 <div className={styles.footer__invitation}>
-                    <Image src="/new_logo.png" alt="" width={160} height={150}/>
+                    <Image src="/logo_blanco.png" alt="" width={160} height={150}/>
                     <div className={styles.footer__title}>
                         <h3 className='montserrat-100'>Nuestra redes sociales</h3>
                     </div>
@@ -39,7 +39,6 @@ export default function Footer() {
                     <li><Link href="/burgers" aria-label='Facebook'><i className='fab fa-facebook montserrat-100'></i> Burgers</Link></li>
                     <li><Link href="/homies_kids" aria-label='Facebook'><i className='fab fa-facebook montserrat-100'></i>Homies Kids</Link></li>
                     <li><Link href="/bebidas" aria-label='Facebook'><i className='fab fa-facebook montserrat-100'></i>Bebidas</Link></li>
-                    <li><Link href="/malteadas" aria-label='Facebook'><i className='fab fa-facebook montserrat-100'></i>Malteadas</Link></li>
                     <li><Link href="/adicionales" aria-label='Facebook'><i className='fab fa-facebook montserrat-100'></i>Adicionales</Link></li>
                 </ul>
             </div>
